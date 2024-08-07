@@ -128,7 +128,6 @@ class CalorieTracker {
   }
 
   _displayNewMeal(meal) {
-    console.log(meal)
     const mealsEl = document.getElementById('meal-items')
     const mealEl = document.createElement('div')
     mealEl.classList.add('card', 'my-2')

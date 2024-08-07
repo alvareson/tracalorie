@@ -17,16 +17,16 @@
 <header
         class="bg-primary d-sm-flex justify-content-between align-items-center text-white text-center py-2 px-5"
 >
-  <h1><i class="fa-solid fa-utensils"></i> Tracalorie</h1>
+  <h1><i class="fa-solid fa-utensils"></i> Привет Катя :)</h1>
   <div>
     <button
             class="btn btn-outline-light mx-3"
             data-bs-toggle="modal"
             data-bs-target="#limit-modal"
     >
-      Set Daily Limit
+      Установить дневной лимит
     </button>
-    <button id="reset" class="btn btn-outline-light">Reset Day</button>
+    <button id="reset" class="btn btn-outline-light">Сбросить</button>
   </div>
 </header>
 
@@ -37,7 +37,7 @@
       <div class="card text-center bg-dark text-white">
         <div class="card-body">
           <div id="calories-limit" class="fs-1 fw-bold"></div>
-          <p class="fs-4">Daily Calorie Limit</p>
+          <p class="fs-4">Дневной лимит калорий</p>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
       <div class="card text-center bg-primary text-white">
         <div class="card-body">
           <div id="calories-total" class="fs-1 fw-bold"></div>
-          <p class="fs-4">Gain/Loss</p>
+          <p class="fs-4">Набрано/Сброшено</p>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
       <div class="card bg-light">
         <div class="card-body">
           <div id="calories-consumed" class="fs-1 fw-bold"></div>
-          <p class="fs-4">Calories Consumed</p>
+          <p class="fs-4">Калорий употреблено</p>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
       <div class="card bg-light">
         <div class="card-body">
           <div id="calories-burned" class="fs-1 fw-bold"></div>
-          <p class="fs-4">Calories Burned</p>
+          <p class="fs-4">Калорий сожжено</p>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
       <div class="card bg-light">
         <div class="card-body">
           <div id="calories-remaining" class="fs-1 fw-bold"></div>
-          <p class="fs-4">Calories Remaining</p>
+          <p class="fs-4">Калорий осталось</p>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
                 type="text"
                 id="filter-meals"
                 class="form-control"
-                placeholder="Filter Meals..."
+                placeholder="Отфильтровать блюда..."
         />
       </div>
     </div>
@@ -107,7 +107,7 @@
                 type="text"
                 id="filter-workouts"
                 class="form-control"
-                placeholder="Filter Workouts..."
+                placeholder="Отфильтровать тренировки..."
         />
       </div>
     </div>
@@ -121,7 +121,7 @@
     <div class="col-md-6">
       <div class="d-flex align-items-center">
         <h2 class="border-start border-primary border-3 p-2">
-          Meals / Food Items
+          Еда / Блюда
         </h2>
         <button
                 class="btn btn-primary btn-sm ms-auto text-white fw-bold py-2 px-3 h-100"
@@ -130,7 +130,7 @@
                 aria-expanded="false"
                 aria-controls="collapse-meal"
         >
-          <i class="fa-solid fa-plus"></i> Add Meal
+          <i class="fa-solid fa-plus"></i> Добавить блюдо
         </button>
       </div>
 
@@ -143,7 +143,7 @@
                       type="text"
                       class="form-control"
                       id="meal-name"
-                      placeholder="Enter Meal or Item"
+                      placeholder="Введите название блюда"
               />
             </div>
             <div class="mb-3">
@@ -151,11 +151,11 @@
                       type="number"
                       class="form-control"
                       id="meal-calories"
-                      placeholder="Enter Calories"
+                      placeholder="Сколько калорий"
               />
             </div>
             <button type="submit" class="btn btn-primary text-white">
-              Add Meal Item
+              Добавить
             </button>
           </form>
         </div>
@@ -167,7 +167,7 @@
     <div class="col-md-6">
       <div class="d-flex align-items-center">
         <h2 class="border-start border-secondary border-3 p-2">
-          Workouts
+          Тренировки
         </h2>
         <button
                 class="btn btn-secondary btn-sm ms-auto text-white fw-bold py-2 px-3 h-100"
@@ -176,7 +176,7 @@
                 aria-expanded="false"
                 aria-controls="collapse-workout"
         >
-          <i class="fa-solid fa-plus"></i> Add Workout
+          <i class="fa-solid fa-plus"></i> Добавить тренировку
         </button>
       </div>
 
@@ -189,7 +189,7 @@
                       type="text"
                       class="form-control"
                       id="workout-name"
-                      placeholder="Enter Workout"
+                      placeholder="Название тренировки"
               />
             </div>
             <div class="mb-3">
@@ -197,11 +197,11 @@
                       type="number"
                       class="form-control"
                       id="workout-calories"
-                      placeholder="Enter Calories"
+                      placeholder="Сколько калорий"
               />
             </div>
             <button type="submit" class="btn btn-primary text-white">
-              Add Workout Item
+              Добавить
             </button>
           </form>
         </div>
@@ -224,20 +224,20 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="limitModalLabel">
-          Set Daily Limit
+          Задать дневной лимит
         </h1>
         <button
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="Close"
+                aria-label="Закрыть"
         ></button>
       </div>
       <div class="modal-body">
         <form id="limit-form">
           <div class="mb-3">
             <label for="limit" class="form-label"
-            >Daily Calorie Limit</label
+            >Дневной лимит калорий</label
             >
             <input
                     type="text"
@@ -248,7 +248,7 @@
           </div>
 
           <button type="submit" class="btn btn-primary text-white">
-            Save
+            Сохранить
           </button>
         </form>
       </div>
